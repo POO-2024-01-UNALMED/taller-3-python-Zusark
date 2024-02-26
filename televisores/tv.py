@@ -1,5 +1,5 @@
-import Control
-import Marca
+from televisores.control import Control
+from televisores.marca import Marca
 
 class TV:    
     _numTV = 0
