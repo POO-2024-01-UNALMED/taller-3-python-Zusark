@@ -20,9 +20,8 @@ class Control:
         self._tv.setVolumen(num)
     
     def enlazar(self,tv):
-        if isinstance(tv,TV):
-            self._tv = tv
-            tv.setControl(self)
+        self._tv = tv
+        tv.setControl(self)
 
     def setTv(self,tv):
         self.enlazar(tv)
