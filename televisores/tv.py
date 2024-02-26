@@ -10,14 +10,16 @@ class TV:
         self._marca = marca
         self._estado = estado
         TV._numTV+=1
+        
     def setMarca(self,marca):
         self._marca = marca
     def getMarca(self):
         return self._marca
     
-    def setCanal(self,canal):
-        if self._estado == True and canal<=120 and canal>=1:
-            self._canal = canal
+    def setCanal(self,num):
+        if (self._estado == True) and (num<=120) and (num>=1):
+            self._canal = num
+
     def getCanal(self):
         return self._canal
     
