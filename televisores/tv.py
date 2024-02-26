@@ -1,4 +1,3 @@
-from control import Control
 class TV:    
     _numTV = 0
     def __init__(self,marca,estado):
@@ -33,8 +32,7 @@ class TV:
         return self._volumen
     
     def setControl(self,control):
-        if isinstance(control, Control):
-            self._control = control
+        self._control = control
     def getControl(self):
         return self._control
     

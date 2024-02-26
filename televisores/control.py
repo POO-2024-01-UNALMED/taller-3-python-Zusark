@@ -1,4 +1,3 @@
-from tv import TV
 class Control:
     _tv = None
 
@@ -26,7 +25,6 @@ class Control:
             tv.setControl(self)
 
     def setTv(self,tv):
-        if isinstance(tv, TV):
-            self.enlazar(tv)
+        self.enlazar(tv)
     def getTv(self):
         return self._tv
