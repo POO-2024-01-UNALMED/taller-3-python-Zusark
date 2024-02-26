@@ -1,16 +1,15 @@
-class TV:   
-    _canal = 1
-    _precio = 500
-    _volumen = 1
-    _control = None
+class TV: 
     _numTV=0
-    
-    _numTV = 0
+
     def __init__(self,marca,estado):
         self._marca = marca
         self._estado = estado
         TV._numTV+=1
-        
+        _canal = 1
+        _precio = 500
+        _volumen = 1
+        _control = None
+
     def setMarca(self,marca):
         self._marca = marca
     def getMarca(self):
